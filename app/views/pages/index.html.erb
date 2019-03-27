@@ -1,0 +1,8 @@
+<h1><p class="lead text-center">Це наш дуже крутий готель</p></h1>
+<hr>
+<% @posts.each do |post| %>
+    <div class="alert alert-light">
+      <h2><%= link_to post.title, post %></h2>
+      <h4><%= post.body %></h4>
+    </div>
+<% end %>
